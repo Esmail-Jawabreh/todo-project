@@ -6,15 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo List</title>
-    <style>
-        #logo {
-            float: left;
-        }
 
-        h3 {
-            margin-left: 1430px;
-        }
-    </style>
+    <link rel="stylesheet" href="about-design.css">
 </head>
 
 <body>
@@ -22,32 +15,40 @@
         <img id="logo" src="https://online.ltuc.com/d2l/lp/navbars/6606/theme/viewimage/186/view?v=20.23.1.18034"
             width="70" height="50">
 
-        <a style="text-decoration:none;" href="http://127.0.0.1:5500/index.html">
-            <h3>ToDo List</h3>
-        </a>
-        <h3><u>About</u></h3>
+        <ul id="ul">
+            <li id="li"> <a style="text-decoration:none;" href="http://127.0.0.1:5500/index.html">
+                    <h3>Home</h3>
+            </li>
+            </a>
+            <li id="li">
+                <h3><u>About</u></h3>
+            </li>
+        </ul>
     </header>
 
     <main>
-        <center><div>
-            <img src="https://online.ltuc.com/d2l/common/viewprofileimage.d2l?oi=6606&ui=26975&s=100&lm=638106971282400000&v=11&cui=26975"
-            width="120" height="120">
-            <h4>Esmail Jawabreh</h4>
-            <p> 22 years old Jordanian Software Engineer, studied at Philadelphia universty. <br>
-                Grew up in Yanbu, KSA, and now living in Amman, Jordan. <br>
-                Hobbies: Boxing, Swimming, Football.
-            </p><br>
-        </div>
-        <form>
-            <label for="name">Your name:</label><br>
-            <input type="text" id="name" name="name"><br><br>
-            <label for="email">Your email:</label><br>
-            <input type="text" id="email" name="email"><br><br>
-            <label for="name">Your message:</label><br>
-            <textarea rows="4" cols="50" name="message"></textarea><br>
-            <input type="submit" value="Submit"><br><br>
-          </form> 
-        <div></center>
+        <center>
+            <div>
+                <img src="https://online.ltuc.com/d2l/common/viewprofileimage.d2l?oi=6606&ui=26975&s=100&lm=638106971282400000&v=11&cui=26975"
+                    width="120" height="120">
+                <h3 id="name">Esmail Jawabreh</h3>
+                <p id="p"> 22 years old Jordanian Software Engineer, studied at Philadelphia universty. <br>
+                    Grew up in Yanbu, KSA, and now living in Amman, Jordan. <br>
+                    Hobbies: Boxing, Swimming, Football.
+                </p><br>
+            </div>
+            <h3 id="Contact">Contact me:</h3>
+            <form>
+                <label for="name">Your name:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Your email:</label><br>
+                <input type="text" id="email" name="email"><br><br>
+                <label for="name">Your message:</label><br>
+                <textarea rows="4" cols="50" name="message"></textarea><br>
+                <button class="button button5">Send</button>
+            </form>
+            <div>
+        </center>
 
         </div>
 
@@ -55,8 +56,10 @@
 
     <center>
         <footer>
-            <h5>© 2023 All Rights Reserved</h5>
-            <h5>Contact me: EsmailJawabreh@Gmail.com</h5>
+            <h5>© 2023 All Rights Reserved <br>
+                Contact me: EsmailJawabreh@Gmail.com
+            </h5>
+
         </footer>
     </center>
 </body>
