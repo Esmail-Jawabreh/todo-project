@@ -7,34 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo List</title>
 
-    <style>
-        #logo {
-            float: left;
-        }
-
-        h3 {
-            margin-left: 1430px;
-        }
-
-        footer {
-            margin-top: 13%;
-        }
-        table {
-            font-family: arial, sans-serif;
-            border-collapse: collapse;
-            width: 100%;
-            margin-top: 6%;
-          }
-          td, th {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-          }
-          
-          tr:nth-child(even) {
-            background-color: #dddddd;
-          }
-    </style>
+    <link rel="stylesheet" href="index-design.css">
 </head>
 
 <body>
@@ -42,49 +15,84 @@
         <img id="logo" src="https://online.ltuc.com/d2l/lp/navbars/6606/theme/viewimage/186/view?v=20.23.1.18034"
             width="70" height="50">
 
-        <h3><u>ToDo List</u></h3>
-        <a style="text-decoration:none;" href="http://127.0.0.1:5500/about.html">
-            <h3 align="left">About</h3>
-        </a>
+
+        <ul id="ul">
+            <li id="li">
+                <h3><u>Home</u></h3>
+            </li>
+            <li id="li"><a style="text-decoration:none;" href="http://127.0.0.1:5500/about.html">
+                    <h3>About</h3>
+                </a></li>
+        </ul>
     </header>
 
     <main>
-        <table>
-            <tr>
-                <th>Tasks</th>
-                <th>status</th>
-            </tr>
-            <tr>
-                <td>wake up and workout</td>
-                <td>wake up at 6:00, and workout from 8:00 to 9:00</td>
-            </tr>
-            <tr>
-                <td>studying</td>
-                <td>studying HTML , CSS at 9:00 - 2:00</td>
-            </tr>
-            <tr>
-                <td>napping</td>
-                <td>napping for half hour</td>
-            </tr>
-            <tr>
-                <td>practicing</td>
-                <td>practicing for two hours</td>
-            </tr>
-            <tr>
-                <td>go out</td>
-                <td>go out with friends for 1 hour</td>
-            </tr>
-            <tr>
-                <td>sleeping</td>
-                <td>sleeping until 6 am</td>
-            </tr>
-        </table>
+        <center>
+            <h1 id="todolist">ToDo List</h1>
+            <table>
+                <tr>
+                    <th id="tasks">Tasks</th>
+                    <th id="status">status</th>
+                </tr>
+                <tr>
+                    <td>Wake up and Workout</td>
+                    <td>
+                        <input type="radio" id="checkyes" name="wakeup">
+                        <label>Done</label><br>
+                        <input type="radio" id="checkno" name="wakeup">
+                        <label>Not yet</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Studying</td>
+                    <td><input type="radio" id="checkyes" name="studying">
+                        <label>Done</label><br>
+                        <input type="radio" id="checkno" name="studying">
+                        <label>Not yet</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Napping</td>
+                    <td><input type="radio" id="checkyes" name="napping">
+                        <label>Done</label><br>
+                        <input type="radio" id="checkno" name="napping">
+                        <label>Not yet</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Practicing</td>
+                    <td><input type="radio" id="checkyes" name="practicing">
+                        <label>Done</label><br>
+                        <input type="radio" id="checkno" name="practicing">
+                        <label>Not yet</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Go out</td>
+                    <td><input type="radio" id="checkyes" name="go-out">
+                        <label>Done</label><br>
+                        <input type="radio" id="checkno" name="go-out">
+                        <label>Not yet</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sleeping</td>
+                    <td><input type="radio" id="checkyes" name="sleeping">
+                        <label>Done</label><br>
+                        <input type="radio" id="checkno" name="sleeping">
+                        <label>Not yet</label>
+                    </td>
+                </tr>
+            </table>
+        </center>
     </main>
 
     <center>
         <footer>
-            <h5>© 2023 All Rights Reserved</h5>
-            <h5>Contact me: EsmailJawabreh@Gmail.com</h5>
+            <h5>© 2023 All Rights Reserved <br>
+                Contact me: EsmailJawabreh@Gmail.com
+            </h5>
+
         </footer>
     </center>
 </body>
