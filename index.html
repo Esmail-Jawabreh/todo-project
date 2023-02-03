@@ -7,94 +7,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo List</title>
 
-    <link rel="stylesheet" href="index-design.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
-        <img id="logo" src="https://online.ltuc.com/d2l/lp/navbars/6606/theme/viewimage/186/view?v=20.23.1.18034"
-            width="70" height="50">
+
+        <ul>
+            <a href="/"><img src="https://online.ltuc.com/d2l/lp/navbars/6606/theme/viewimage/186/view?v=20.23.1.18034">
+            </a>
 
 
-        <ul id="ul">
-            <li id="li">
-                <h3><u>Home</u></h3>
-            </li>
-            <li id="li"><a style="text-decoration:none;" href="http://127.0.0.1:5500/about.html">
+
+
+            <li><a href="/about.html">
                     <h3>About</h3>
                 </a></li>
+            <li>
+                <a href="/">
+                    <h3><u>Home</u></h3>
+                </a>
+            </li>
+
         </ul>
     </header>
 
+    <h1 class="todolist">ToDo List</h1>
+
     <main>
-        <center>
-            <h1 id="todolist">ToDo List</h1>
-            <table>
-                <tr>
-                    <th id="tasks">Tasks</th>
-                    <th id="status">status</th>
-                </tr>
-                <tr>
-                    <td>Wake up and Workout</td>
-                    <td>
-                        <input type="radio" id="checkyes" name="wakeup">
-                        <label>Done</label><br>
-                        <input type="radio" id="checkno" name="wakeup">
-                        <label>Not yet</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Studying</td>
-                    <td><input type="radio" id="checkyes" name="studying">
-                        <label>Done</label><br>
-                        <input type="radio" id="checkno" name="studying">
-                        <label>Not yet</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Napping</td>
-                    <td><input type="radio" id="checkyes" name="napping">
-                        <label>Done</label><br>
-                        <input type="radio" id="checkno" name="napping">
-                        <label>Not yet</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Practicing</td>
-                    <td><input type="radio" id="checkyes" name="practicing">
-                        <label>Done</label><br>
-                        <input type="radio" id="checkno" name="practicing">
-                        <label>Not yet</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Go out</td>
-                    <td><input type="radio" id="checkyes" name="go-out">
-                        <label>Done</label><br>
-                        <input type="radio" id="checkno" name="go-out">
-                        <label>Not yet</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Sleeping</td>
-                    <td><input type="radio" id="checkyes" name="sleeping">
-                        <label>Done</label><br>
-                        <input type="radio" id="checkno" name="sleeping">
-                        <label>Not yet</label>
-                    </td>
-                </tr>
-            </table>
-        </center>
+
+
+        <table>
+            <tr>
+                <th id="tasks">Tasks</th>
+                <th id="status">status</th>
+            </tr>
+            <tr>
+                <td>Wake up and Workout</td>
+                <td>
+                    <input type="radio" id="checkyes" name="wakeup">
+                    <label>Done</label><br>
+                    <input type="radio" id="checkno" name="wakeup">
+                    <label>Not yet</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Studying</td>
+                <td><input type="radio" id="checkyes" name="studying">
+                    <label>Done</label><br>
+                    <input type="radio" id="checkno" name="studying">
+                    <label>Not yet</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Napping</td>
+                <td><input type="radio" id="checkyes" name="napping">
+                    <label>Done</label><br>
+                    <input type="radio" id="checkno" name="napping">
+                    <label>Not yet</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Practicing</td>
+                <td><input type="radio" id="checkyes" name="practicing">
+                    <label>Done</label><br>
+                    <input type="radio" id="checkno" name="practicing">
+                    <label>Not yet</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Go out</td>
+                <td><input type="radio" id="checkyes" name="go-out">
+                    <label>Done</label><br>
+                    <input type="radio" id="checkno" name="go-out">
+                    <label>Not yet</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Sleeping</td>
+                <td><input type="radio" id="checkyes" name="sleeping">
+                    <label>Done</label><br>
+                    <input type="radio" id="checkno" name="sleeping">
+                    <label>Not yet</label>
+                </td>
+            </tr>
+        </table>
+
     </main>
 
-    <center>
-        <footer>
-            <h5>© 2023 All Rights Reserved <br>
-                Contact me: EsmailJawabreh@Gmail.com
-            </h5>
 
-        </footer>
-    </center>
+    <footer class="indexfooter">
+        <h5>© 2023 All Rights Reserved <br>
+            Contact me: EsmailJawabreh@Gmail.com
+        </h5>
+
+    </footer>
+
 </body>
 
 </html>
