@@ -2,10 +2,10 @@
 
 
 
-## old Wireframes
+## old Wireframe
 ![Figma img](Lab-03.png)
 
 
 
-## new Wireframes
+## new Wireframe
 ![Figma img](Lab-04.png)
