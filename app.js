@@ -70,5 +70,9 @@ function Array_Fun(Answer_Array){
     return Answer_Array;
 }
 
-console.log(Array_Fun(Answer_Array));
+// console.log(Array_Fun(Answer_Array));
 
+result = Array_Fun(Answer_Array);
+for (let i =0; i<result.length; i++) {
+    console.log(result[i]);
+}
